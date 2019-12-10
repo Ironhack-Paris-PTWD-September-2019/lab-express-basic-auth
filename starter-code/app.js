@@ -68,4 +68,10 @@ app.use('/', index);
 const signup=require('./routes/auth'); 
 app.use('/', signup); 
 
+const router=require('./routes/main'); 
+app.use('/', router); 
+
+const protectedRoutes=require('./routes/protected'); 
+app.use('/', protectedRoutes); 
+
 module.exports = app;

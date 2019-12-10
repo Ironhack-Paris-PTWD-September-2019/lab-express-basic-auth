@@ -66,10 +66,13 @@ router.post('/login', (req,res,next)=>{
       return;
     }
 
-    if(!bcrypt.compareSync(password,user.password)){
+    if(bcrypt.compareSync(password,user.password)){
+      req.session.currentUser = user; 
+      res.redirect('/');
+    } else {
       res.render('/login', {errorM:"You have to fill in Username and Password for login"});
-      return;
-    }
+      }
+
     req.session.currentUser = user; 
     res.redirect('/');
 
