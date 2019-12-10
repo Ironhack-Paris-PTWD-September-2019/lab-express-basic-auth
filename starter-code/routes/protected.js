@@ -18,6 +18,11 @@ router.get('/private', ensureIsLogged, (req,res,next)=>{
   res.render('protected/private', {
     user: req.session.currentUser.username
   });
+});
+
+router.get('/main',ensureIsLogged, (req,res,next)=>{
+  res.render('main');
 })
+
 
 module.exports= router; 

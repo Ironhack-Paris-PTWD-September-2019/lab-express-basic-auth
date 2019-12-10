@@ -66,10 +66,7 @@ const index = require('./routes/index');
 app.use('/', index);
 
 const signup=require('./routes/auth'); 
-app.use('/', signup); 
-
-const router=require('./routes/main'); 
-app.use('/', router); 
+app.use('/', signup);  
 
 const protectedRoutes=require('./routes/protected'); 
 app.use('/', protectedRoutes); 
