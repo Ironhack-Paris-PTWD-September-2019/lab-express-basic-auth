@@ -55,4 +55,7 @@ const index = require('./routes/index');
 app.use('/', index);
 
 
+const authRouter = require('./routes/auth.js');
+app.use('/', authRouter);
+
 module.exports = app;
