@@ -11,7 +11,15 @@ function ensureIsLogged(req, res, next) {
 
 /* GET home page */
 router.get('/', (req, res, next) => {
-  res.render('index');
+  let userIsLogged = false;
+
+  if (req.session.currentUser) {
+    userIsLogged = true; 
+  } 
+    
+  res.render('index', {
+    userIsLogged: userIsLogged
+  });
 });
 
 /* GET main page */
