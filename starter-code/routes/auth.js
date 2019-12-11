@@ -46,7 +46,7 @@ router.post(`/signup`, (req,res,next) => {
       password: hashPass
     })
     .then(
-      res.redirect(`/`)
+      res.redirect(`/main`)
     )
     .catch(err => next(err))
   })
@@ -91,7 +91,7 @@ router.post(`/login`, (req,res,next) => {
 
     if(bcrypt.compareSync(password, user.password)) {
       req.session.currentUser = user;
-      res.redirect(`/`)
+      res.redirect(`/main`)
     } else {
       res.render(`auth/login`, {
         username: username,
