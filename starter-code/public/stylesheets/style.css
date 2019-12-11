@@ -44,6 +44,10 @@ a {
   color: #43a3e6;
   transition: .3s ease background; }
 
+input:invalid:required {
+  border: 1px solid red;
+  box-shadow: red 0px 0px 1.5px 1px; }
+
 .errorM {
   background: #F02B63;
   box-sizing: border-box;
@@ -51,5 +55,44 @@ a {
   margin: 20px auto;
   padding: 20px;
   width: 100%; }
+
+h1 {
+  text-align: center;
+  width: 100%; }
+
+.strength_meter {
+  height: 23px;
+  width: 100%;
+  background: silver;
+  margin-bottom: 10px; }
+
+.strength_meter div {
+  height: 23px;
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  line-height: 23px; }
+
+.veryweak {
+  background-color: #FFA0A0;
+  border-color: #F04040 !important; }
+
+.weak {
+  background-color: #FFB78C;
+  border-color: #FF853C !important; }
+
+.medium {
+  background-color: #FFEC8B;
+  border-color: #FC0 !important; }
+
+.strong {
+  background-color: #C3FF88;
+  border-color: #8DFF1C !important; }
+
+.button_strength {
+  display: block;
+  text-align: center;
+  margin-bottom: 10px; }
 
 /*# sourceMappingURL=style.css.map */
