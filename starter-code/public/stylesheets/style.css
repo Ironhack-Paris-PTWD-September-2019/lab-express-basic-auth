@@ -1,0 +1,105 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+a {
+  color: #00B7FF; }
+
+#form {
+  margin: 30px auto;
+  width: 380px; }
+
+#form label {
+  color: #666;
+  display: inline-block;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 100%; }
+
+#form input,
+#form button {
+  box-sizing: border-box;
+  font-size: 14px;
+  outline: 0;
+  padding: 4px;
+  width: 100%;
+  margin-bottom: 20px; }
+
+#form button {
+  background: #43a3e6;
+  border: 1px solid #43a3e6;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  padding: 8px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: .3s ease background;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto; }
+
+#form button:hover {
+  background: #fff;
+  color: #43a3e6;
+  transition: .3s ease background; }
+
+.account-message {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center; }
+
+input:invalid:required {
+  border: 1px solid red;
+  box-shadow: red 0px 0px 1.5px 1px; }
+
+.errorM {
+  background: #F02B63;
+  box-sizing: border-box;
+  color: #fff;
+  margin: 20px auto;
+  padding: 20px;
+  width: 100%; }
+
+h1 {
+  text-align: center;
+  width: 100%; }
+
+.strength_meter {
+  height: 30px;
+  width: 100%;
+  background: silver;
+  margin-bottom: 15px; }
+
+.strength_meter div {
+  height: 30px;
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  line-height: 30px; }
+
+.veryweak {
+  background-color: #FFA0A0;
+  border-color: #F04040 !important; }
+
+.weak {
+  background-color: #FFB78C;
+  border-color: #FF853C !important; }
+
+.medium {
+  background-color: #FFEC8B;
+  border-color: #FC0 !important; }
+
+.strong {
+  background-color: #C3FF88;
+  border-color: #8DFF1C !important; }
+
+.button_strength {
+  display: block;
+  text-align: center;
+  margin-bottom: 10px; }
+
+/*# sourceMappingURL=style.css.map */
