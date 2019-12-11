@@ -1,2 +1,13 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<h1>Basic auth lab</h1>
+<p>Welcome to Basic auth lab</p>
+
+<div id="container">
+  {{#if userIsLogged}}
+  <a href="/logout">Log out</a> - 
+  {{else}}
+  <a href="/signup">Sign up</a> - 
+  <a href="/login">Login</a> - 
+  {{/if}}
+  <a href="/main">Account homepage</a> -  
+  <a href="/private">Private</a>
+</div>
