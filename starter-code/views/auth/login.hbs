@@ -1,0 +1,17 @@
+<form action="/login" method="POST">
+    <label>username :
+        <input type="text" name="username">
+    </label>
+    <label>password : 
+        <input type="text" name="password">
+    </label>
+    <button>Login</button>
+
+    <p class="account-message">
+    Don't have an account? <a href="/signup">Sign up</a>
+  </p>
+</form>
+
+{{#if errorMessage}}
+    {{errorMessage}}
+{{/if}}
