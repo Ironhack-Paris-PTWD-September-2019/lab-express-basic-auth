@@ -32,7 +32,7 @@ router.post('/signup', (req, res, next) => {
       username: req.body.username,
       password: hassPassword
     }).then(user => {
-      res.redirect('/');
+      res.redirect('/main');
     }).catch(err => next(err))
   }).catch(err => next(err));
 });
@@ -61,7 +61,7 @@ router.post("/login", (req, res, next) => {
       }
       if (bcrypt.compareSync(req.body.password, user.password)) {
         req.session.currentUser = user; // Save the user in the session!
-        res.redirect("/");
+        res.redirect("/main");
       } else {
         res.render("auth/login", {
           errorMessage: "Incorrect password"
@@ -69,7 +69,6 @@ router.post("/login", (req, res, next) => {
       }
   })
   .catch(err => next(err))
-  
 });
 
 
